@@ -1,1 +1,9 @@
-.app-attr-header {}
+.esb-attr-grid {
+  // HEADER.
+  #attribute-header {
+    ::ng-deep app-attr-header {
+      background-color: aqua;
+      width: 100%;
+    }
+  }
+}

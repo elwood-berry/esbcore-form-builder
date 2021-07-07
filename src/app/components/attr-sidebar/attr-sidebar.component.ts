@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-attr-sidebar',
   templateUrl: './attr-sidebar.component.html',
-  styleUrls: ['./attr-sidebar.component.css']
+  styleUrls: ['./attr-sidebar.component.scss']
 })
 export class AttrSidebarComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

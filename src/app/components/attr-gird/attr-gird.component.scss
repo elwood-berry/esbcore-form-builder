@@ -3,7 +3,35 @@
   #attribute-header {
     ::ng-deep app-attr-header {
       background-color: aqua;
+      height: 100%;
       width: 100%;
     }
   }
+
+  // SIDEBAR.
+  #attribute-sidebar {
+    ::ng-deep app-attr-sidebar {
+      background-color: aqua;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  // CANVAS.
+  #attribute-canvas {
+    ::ng-deep app-attr-canvas {
+      background-color: aqua;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  // FOOTER.
+  #attribute-footer {
+    ::ng-deep app-attr-footer {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
 }

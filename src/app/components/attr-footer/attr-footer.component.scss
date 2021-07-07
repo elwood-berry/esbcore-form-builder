@@ -1,0 +1,22 @@
+.attr-footer-container {
+  padding: 15px 0;
+
+  // BUTTON: SAVE.
+  .attr-save-btn {
+    background-color: #333747;
+    color: #fff;
+  }
+  .mat-button-disabled {
+    background-color: rgb(51 55 71 / 20%);
+    border: 1px solid rgb(51 55 71 / 20%);
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  // BUTTONS.
+  .mat-stroked-button,
+  .mat-button {
+    margin: 0 auto 15px;
+    text-transform: uppercase;
+    width: 50%;
+  }
+}

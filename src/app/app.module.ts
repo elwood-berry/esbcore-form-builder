@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // ASSETS
 import { MaterialLibraryModule } from '../assets/libs/material/material-library/material-library.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { AttrGirdComponent } from './components/attr-gird/attr-gird.component';
@@ -14,10 +14,14 @@ import { AttrCanvasComponent } from './components/attr-canvas/attr-canvas.compon
 import { AttrFooterComponent } from './components/attr-footer/attr-footer.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MaterialLibraryModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MaterialLibraryModule,
+    FlexLayoutModule
+  ],
   declarations: [
     AppComponent,
-    FlexLayoutModule,
     AttrGirdComponent,
     AttrHeaderComponent,
     AttrSidebarComponent,

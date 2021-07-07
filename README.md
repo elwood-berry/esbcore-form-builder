@@ -29,3 +29,17 @@ See 'attr-gird.component.html'
 ---  
 
 ## Attribute Header  
+
+
+
+---  
+---  
+
+# TASK LOG 
+
+**WED, JULY 7, 2021**  
+1. Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')  
+1. Display type of input ('text', 'text area', 'checkbox', etc)
+1. Display the charges menu  
+1. Display/Format Delete button
+1. Confirmation dialog for deleting

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-attr-canvas',
@@ -52,7 +53,7 @@ export class AttrCanvasComponent implements OnInit {
     }
   ];
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   // CDK: Drag & Drop
   public drop(event: CdkDragDrop<string[]>) {
@@ -90,5 +91,20 @@ export class AttrCanvasComponent implements OnInit {
     }
   }
 
+  // DIALOG: 'Are You Sure You Want To Delete This?'
+  openDialog() {
+    this.dialog.open(DialogConfirmDeletion);
+  }
+
   ngOnInit() {}
 }
+
+// HTML TEMPLATES
+// ---------------------------------------------
+
+// CONFIRM DELETION
+@Component({
+  selector: 'dialog-confirm-deletion',
+  templateUrl: './html/confirm-deletion.html'
+})
+export class DialogConfirmDeletion {}

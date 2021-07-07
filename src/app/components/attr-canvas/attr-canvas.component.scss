@@ -49,15 +49,19 @@
     }
   }
 
+  // 
   .attr-sec-required,
   .attr-sec-charges-menu,
-  .attr-sec-charges-menu {
+  .attr-sec-charges-menu,
+  .attr-sec-delete {
     background-color: rgba(0, 255, 255, 0.1);
     height: 60px;
     padding: 15px 0 0 0;
     text-align: center;
     width: 75px;
   }
+
+
   // CDK: DRAG.
   .cdk-drag-preview {
     box-sizing: border-box;

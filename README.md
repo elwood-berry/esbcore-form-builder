@@ -3,13 +3,18 @@
 ## Table Of Contents  
 These are the initial tasks to create this prototype.  
 
-1. Attribute Grid
+1. [Attribute Grid](#table-of-contents)
 1. Attribute Header  
 1. Attribute Header - Static Mode  
 1. Attribute Header - Edit Mode  
 1. Attribute Sidebar  
 1. Attribute Footer  
 
+---  
+
+## Attribute Grid  
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra.  
+  
 **Attribute Grid** Base Structure.  
 See 'attr-gird.component.html'
 ```html  

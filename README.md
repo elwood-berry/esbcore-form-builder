@@ -43,3 +43,4 @@ See 'attr-gird.component.html'
 1. Display the charges menu  
 1. Display/Format Delete button
 1. Confirmation dialog for deleting
+1. Format: Look & Feel - Deletion Confirmation Dialog Window

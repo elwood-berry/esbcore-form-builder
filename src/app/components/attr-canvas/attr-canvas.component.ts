@@ -19,7 +19,9 @@ export class AttrCanvasComponent implements OnInit {
     'Episode IX – The Rise of Skywalker'
   ];
 
-  constructor(event: CdkDragDrop<string[]>) {
+  constructor() {}
+
+  drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(
       this.esbAttributes,
       event.previousIndex,

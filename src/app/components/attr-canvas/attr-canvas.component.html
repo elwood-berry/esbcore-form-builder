@@ -1,10 +1,9 @@
-<div class="attr-canvas-container">
+<div class="attr-canvas-container" (cdkDropListDropped)="drop($event)">
 
-  <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-    <div class="example-box" *ngFor="let attribute of esbAttributes" cdkDrag>
-      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
-      {{attribute}}
-    </div>
+  <div class="example-box" *ngFor="let attribute of esbAttributes" cdkDrag>
+    <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+    {{attribute}}
   </div>
+
 
 </div>

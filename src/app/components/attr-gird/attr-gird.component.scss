@@ -20,8 +20,9 @@
   // CANVAS.
   #attribute-canvas {
     ::ng-deep app-attr-canvas {
-      background-color: aqua;
       height: 100%;
+      padding-bottom: 10px;
+      padding-top: 10px;
       width: 100%;
     }
   }
@@ -29,9 +30,9 @@
   // FOOTER.
   #attribute-footer {
     ::ng-deep app-attr-footer {
+      border-top: 1px solid #ddd;
       height: 100%;
       width: 100%;
     }
   }
-
 }

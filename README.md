@@ -4,7 +4,7 @@
 These are the initial tasks to create this prototype.  
 
 1. [Attribute Grid](#attribute-grid)
-1. Attribute Header  
+1. [Attribute Header](#attribute-header)  
 1. Attribute Header - Static Mode  
 1. Attribute Header - Edit Mode  
 1. Attribute Sidebar  
@@ -25,3 +25,7 @@ See 'attr-gird.component.html'
   <mat-grid-tile id="attribute-header" colspan="4" rowspan="1">Header</mat-grid-tile>
 </mat-grid-list>
 ```
+
+---  
+
+## Attribute Header  

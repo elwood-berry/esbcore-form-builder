@@ -1,8 +1,46 @@
 <div class="attr-canvas-container" cdkDropList (cdkDropListDropped)="drop($event)">
 
   <div class="attribute-panel" *ngFor="let attribute of esbAttributes" cdkDrag>
+
+    <!-- DRAG HANDLE -->
+    <div class="attr-drag-indicator">
+      <mat-icon aria-hidden="false" aria-label="Drag handle for THIS attribute">drag_indicator</mat-icon>
+    </div>
+
+    <div class="attr-row-info" fxLayout="row">
+
+      <!-- TITLE -->
+      <div class="attr-sec-title" fxLayout="column">
+        <div class="attr-name">{{ attribute.name }}</div>
+        <div class="attr-placeholder">{{ attribute.placeholder }}</div>
+      </div>
+
+      <!-- REQUIRED? -->
+      <div class="attr-sec-required">{{ attrRequired( attribute.required ) }}</div>
+
+      <!-- VISIBLE TO CUSTOMERS -->
+      <div class="attr-sec-charges-menu">{{ visibilityToCustomer( attribute.visibleCustomer ) }}</div>
+
+      <!-- VISIBLE TO VENDORS -->
+      <div class="attr-sec-charges-menu">{{ visibilityToVendor( attribute.visibleVendor ) }}</div>
+
+      <!-- CHARGES -->
+      <div class="attr-sec-charges-menu">
+        menu
+      </div>
+
+      <!-- CHARGES -->
+      <div class="attr-sec-charges-menu">
+        menu
+      </div>
+
+      <!-- CHARGES -->
+      <div class="attr-sec-delete">
+        delete
+      </div>
+    </div>
+
     <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
-    {{attribute}}
   </div>
 
 

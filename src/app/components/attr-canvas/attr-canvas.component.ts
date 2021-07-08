@@ -13,33 +13,33 @@ export class AttrCanvasComponent implements OnInit {
   ----------------------------------------------- */
 
   // TEMPLATES - Used for displaying conditional HTML in the template.
-  public displayRequired: any = `<span class="material-icons-outlined">check_box</span>`;
+  // public displayRequired = `<strong style="color: #FF0000;">Shut It Down<strong>`; // <span class="material-icons-outlined">check_box</span>
   public esbAttributes = [
     {
       name: 'First Name',
       placeholder: 'Please provide your first name.',
       required: false,
       visibleCustomer: true,
-      visibleVendor: true
+      visibleVendor: false
     },
     {
       name: 'Last Name',
       placeholder: 'Please provide your last name.',
       required: true,
-      visibleCustomer: true,
-      visibleVendor: true
+      visibleCustomer: false,
+      visibleVendor: false
     },
     {
       name: 'Address #1',
       placeholder: 'Please provide a valid address.',
       required: true,
       visibleCustomer: true,
-      visibleVendor: true
+      visibleVendor: false
     },
     {
       name: 'Address #2',
       placeholder: 'Suite, Apt',
-      required: true,
+      required: false,
       visibleCustomer: true,
       visibleVendor: true
     },
@@ -47,17 +47,19 @@ export class AttrCanvasComponent implements OnInit {
       name: 'City',
       placeholder: 'Please select city.',
       required: true,
-      visibleCustomer: true,
+      visibleCustomer: false,
       visibleVendor: true
     },
     {
       name: 'State',
       placeholder: 'Please select state.',
       required: true,
-      visibleCustomer: true,
-      visibleVendor: true
+      visibleCustomer: false,
+      visibleVendor: false
     }
   ];
+
+  public status: boolean;
 
   /*
   CONSTRUCTOR.
@@ -74,12 +76,10 @@ export class AttrCanvasComponent implements OnInit {
   }
 
   // DEFINE DISPLAY: 'REQUIRED?'
-  public attrRequired(status) {
-    if (status === true) {
-      return this.displayRequired;
-    } else {
-      return 'Not Required';
-    }
+  public attrRequired(status: boolean) {
+    this.status = status;
+    console.log('Status: ', this.status);
+    return this.status;
   }
 
   // DEFINE DISPLAY: 'VISIBLE TO CUSTOMERS?'
@@ -117,3 +117,10 @@ export class AttrCanvasComponent implements OnInit {
   templateUrl: './html/confirm-deletion.html'
 })
 export class DialogConfirmDeletion {}
+
+// STATUS: REQUIRED - TRUE
+@Component({
+  selector: 'status-required-true',
+  templateUrl: './html/status-required_true.html'
+})
+export class statusRequiredTrue {}

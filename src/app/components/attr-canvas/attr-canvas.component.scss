@@ -66,6 +66,34 @@
     width: 75px;
   }
 
+  /*
+  DISPLAY CHECKED
+  Static display to indicate if the option is checked or unchecked
+  */
+  .attr-display-checked {
+    height: 35px;
+    padding: 40px 0 0 0;
+    position: relative;
+
+    .checkbox-outline {
+      left: 0;
+      position: absolute;
+      top: 10px;
+      width: inherit;
+    }
+
+    .display-checkbox {
+      display: none;
+      left: 0;
+      position: absolute;
+      top: 10px;
+      width: inherit;
+    }
+    .display-no-checkbox {
+      display: block;
+    }
+  }
+
   // CDK: DRAG.
   .cdk-drag-preview {
     box-sizing: border-box;

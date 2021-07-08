@@ -16,13 +16,30 @@
       </div>
 
       <!-- REQUIRED? -->
-      <div class="attr-sec-required" [innerHTML]="attribute.required"></div>
+      <div class="attr-sec-required attr-display-checked">
+        <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
+        <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : attrRequired(attribute.required) }">
+          check_box</mat-icon>
+        Required
+      </div>
 
       <!-- VISIBLE TO CUSTOMERS -->
-      <div class="attr-sec-charges-menu">{{ visibilityToCustomer( attribute.visibleCustomer ) }}</div>
+      <div class="attr-sec-charges-menu attr-display-checked">
+        <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
+        <mat-icon class="display-checkbox"
+          [ngClass]="{ 'display-no-checkbox' : attrRequired(attribute.visibleCustomer) }">
+          check_box</mat-icon>
+        visible to customers
+      </div>
 
       <!-- VISIBLE TO VENDORS -->
-      <div class="attr-sec-charges-menu">{{ visibilityToVendor( attribute.visibleVendor ) }}</div>
+      <div class="attr-sec-charges-menu attr-display-checked">
+        <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
+        <mat-icon class="display-checkbox"
+          [ngClass]="{ 'display-no-checkbox' : attrRequired(attribute.visibleVendor) }">
+          check_box</mat-icon>
+        visible to vendors
+      </div>
 
       <!-- CHARGES FOR THIS ATTRIBUTE -->
       <div class="attr-sec-charges">

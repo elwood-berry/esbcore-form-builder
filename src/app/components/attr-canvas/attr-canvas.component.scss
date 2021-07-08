@@ -49,6 +49,11 @@
     }
   }
 
+  // SECTION: ACTION BUTTONS & CHECKBOX
+  .attr-sec-actions {
+    position: absolute;
+    right: 0;
+  }
   // SECTIONS (GLOBAL)
   .attr-sec-required,
   .attr-sec-charges-menu,
@@ -56,7 +61,7 @@
   .attr-sec-charges,
   .attr-sec-edit,
   .attr-sec-delete {
-    background-color: rgba(0, 255, 255, 0.1);
+    background-color: transparent;
     font-size: 11px;
     font-weight: 100;
     height: 60px;
@@ -71,6 +76,7 @@
   Static display to indicate if the option is checked or unchecked
   */
   .attr-display-checked {
+    font-size: 9px;
     height: 35px;
     padding: 40px 0 0 0;
     position: relative;

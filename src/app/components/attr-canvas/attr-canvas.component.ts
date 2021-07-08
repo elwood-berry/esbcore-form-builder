@@ -117,10 +117,3 @@ export class AttrCanvasComponent implements OnInit {
   templateUrl: './html/confirm-deletion.html'
 })
 export class DialogConfirmDeletion {}
-
-// STATUS: REQUIRED - TRUE
-@Component({
-  selector: 'status-required-true',
-  templateUrl: './html/status-required_true.html'
-})
-export class statusRequiredTrue {}

@@ -1,6 +1,12 @@
-<div class="attr-sidebar-container" fxLayout="column">
-  <div>Single Value</div>
-  <div>Single Value</div>
-  <div>Single Value</div>
-  <div>Single Value</div>
-</div>
+<mat-selection-list #attributes [multiple]="false">
+  <mat-list-option *ngFor="let attribute of typesOfAttributes" [value]="attribute">
+
+    <div class="attr-list-option-row" fxLayout="row">
+      <div class="attr-list-option-col" fxFlex="20%">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">add</mat-icon>
+      </div>
+      <div class="attr-list-option-col" style="padding-top: 5px;" fxLayout="80%">{{attribute}}</div>
+    </div>
+
+  </mat-list-option>
+</mat-selection-list>

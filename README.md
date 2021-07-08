@@ -46,6 +46,7 @@ See 'attr-gird.component.html'
 1. click on the attribute to show dialog.
 1. click on the menu icon to see menu 
 1. click on the edit icon to show dialog 
+1. Add an expansion panel to the draggable area.
 
 **Completed**  
 1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 

@@ -114,6 +114,6 @@ export class AttrCanvasComponent implements OnInit {
 // CONFIRM DELETION
 @Component({
   selector: 'dialog-confirm-deletion',
-  templateUrl: './html/confirm-deletion.html'
+  templateUrl: '../../../assets/html/confirm-deletion.html'
 })
 export class DialogConfirmDeletion {}

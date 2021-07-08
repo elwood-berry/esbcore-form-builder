@@ -1,10 +1,16 @@
 <div class="attr-header-container" fxLayout="row">
   <div class="attr-header-col" fxFlex="95%">
-    <h2>Business Card</h2>
+    <h2 [matMenuTriggerFor]="menu" #menuTrigger>Business Card</h2>
   </div>
   <div class="attr-header-col" fxFlex="5%">
-    <button mat-icon-button aria-label="">
+    <button mat-icon-button [matMenuTriggerFor]="menu" #menuTrigger>
       <mat-icon>settings</mat-icon>
     </button>
+
+    <!-- -->
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="openDialog()">Edit Attribute Name</button>
+    </mat-menu>
+
   </div>
 </div>

@@ -2,7 +2,6 @@
 
 ## Table Of Contents  
 These are the initial tasks to create this prototype.  
-
 1. [Attribute Grid](#attribute-grid)
 1. [Attribute Header](#attribute-header)  
 1. Attribute Header - Static Mode  
@@ -38,9 +37,18 @@ See 'attr-gird.component.html'
 # TASK LOG 
 
 **WED, JULY 7, 2021**  
-1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~  
+1.  
 1. Display type of input ('text', 'text area', 'checkbox', etc)
 1. Display the charges menu  
-1. ~~Display/Format Delete button~~
+1. 
 1. Confirmation dialog for deleting
 1. Format: Look & Feel - Deletion Confirmation Dialog Window
+
+**THUR, JULY 8, 2021**  
+
+**Completed**  
+1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 
+
+## References
+1. https://stackoverflow.com/questions/35269179/angular-conditional-class-with-ngclass
+1. ~~Display/Format Delete button~~

@@ -1,8 +1,19 @@
 .attr-header-container {
+  height: inherit;
+
   div:first-child {
-    background-color: #ff0000;
+    padding: 14px 0 0 14px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      padding: 0;
+      margin: 0;
+      color: #5a5a5a;
+    }
   }
   div:last-child {
-    background-color: #0026ff;
+    padding: 5px 0 0 0;
+    text-align: center;
   }
 }

@@ -2,8 +2,10 @@
   // HEADER.
   #attribute-header {
     ::ng-deep app-attr-header {
-      background-color: aqua;
+      background-color: #fff;
+      border-bottom: 2px solid #ddd;
       height: 100%;
+      overflow: hidden;
       width: 100%;
     }
   }

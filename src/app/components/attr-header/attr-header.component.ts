@@ -1,12 +1,22 @@
+/*
+APPLICATION NAME GOES HERE
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com 
+*/
+
+// ANGULAR
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatMenuTrigger } from '@angular/material/menu';
 
+// COMPONENT
 @Component({
   selector: 'app-attr-header',
   templateUrl: './attr-header.component.html',
   styleUrls: ['./attr-header.component.scss']
 })
+
+// CLASS
 export class AttrHeaderComponent implements OnInit {
   //
   @ViewChild('menuTrigger') menuTrigger: MatMenuTrigger;
@@ -20,7 +30,7 @@ export class AttrHeaderComponent implements OnInit {
   //
   openDialog() {
     // #docregion focus-restoration
-    const dialogRef = this.dialog.open(DialogFromMenuExampleDialog, {
+    const dialogRef = this.dialog.open(DialogEditAttributeName, {
       restoreFocus: false
     });
 
@@ -32,7 +42,7 @@ export class AttrHeaderComponent implements OnInit {
 }
 
 @Component({
-  selector: 'dialog-from-menu-dialog',
-  templateUrl: 'dialog-from-menu-example-dialog.html'
+  selector: 'dialog-edit-attribute-name',
+  templateUrl: '../../../assets/html/dialog-edit-attribute-name.html'
 })
-export class DialogFromMenuExampleDialog {}
+export class DialogEditAttributeName {}

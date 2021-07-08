@@ -8,11 +8,17 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./attr-canvas.component.scss']
 })
 export class AttrCanvasComponent implements OnInit {
+  /*
+  PROPERTIES.
+  ----------------------------------------------- */
+
+  // TEMPLATES - Used for displaying conditional HTML in the template.
+  public displayRequired: any = `<span class="material-icons-outlined">check_box</span>`;
   public esbAttributes = [
     {
       name: 'First Name',
       placeholder: 'Please provide your first name.',
-      required: true,
+      required: false,
       visibleCustomer: true,
       visibleVendor: true
     },
@@ -53,6 +59,9 @@ export class AttrCanvasComponent implements OnInit {
     }
   ];
 
+  /*
+  CONSTRUCTOR.
+  ----------------------------------------------- */
   constructor(public dialog: MatDialog) {}
 
   // CDK: Drag & Drop
@@ -67,9 +76,9 @@ export class AttrCanvasComponent implements OnInit {
   // DEFINE DISPLAY: 'REQUIRED?'
   public attrRequired(status) {
     if (status === true) {
-      return 'Required Here';
+      return this.displayRequired;
     } else {
-      return 'Not';
+      return 'Not Required';
     }
   }
 
@@ -85,9 +94,9 @@ export class AttrCanvasComponent implements OnInit {
   // DEFINE DISPLAY: 'VISIBLE TO VENDORS?'
   public visibilityToVendor(status) {
     if (status === true) {
-      return 'I am visible';
+      return 'Visible To Vendor';
     } else {
-      return 'I am NOT visible';
+      return 'Not Visible';
     }
   }
 

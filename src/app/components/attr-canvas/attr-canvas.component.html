@@ -16,7 +16,7 @@
       </div>
 
       <!-- REQUIRED? -->
-      <div class="attr-sec-required">{{ attrRequired( attribute.required ) }}</div>
+      <div class="attr-sec-required" [innerHTML]="attribute.required"></div>
 
       <!-- VISIBLE TO CUSTOMERS -->
       <div class="attr-sec-charges-menu">{{ visibilityToCustomer( attribute.visibleCustomer ) }}</div>
@@ -24,14 +24,18 @@
       <!-- VISIBLE TO VENDORS -->
       <div class="attr-sec-charges-menu">{{ visibilityToVendor( attribute.visibleVendor ) }}</div>
 
-      <!-- CHARGES -->
-      <div class="attr-sec-charges-menu">
-        menu
+      <!-- CHARGES FOR THIS ATTRIBUTE -->
+      <div class="attr-sec-charges">
+        <button mat-icon-button aria-label="Click here to edit chrages for THIS attribute." (click)="openDialog()">
+          <mat-icon>more_vert</mat-icon>
+        </button>
       </div>
 
-      <!-- CHARGES -->
-      <div class="attr-sec-charges-menu">
-        menu
+      <!-- EDIT THIS ATTRIBUTE -->
+      <div class="attr-sec-edit">
+        <button mat-icon-button aria-label="Click here to edit THIS attribute." (click)="openDialog()">
+          <mat-icon>edit</mat-icon>
+        </button>
       </div>
 
       <!-- DELETE THIS ATTRIBUTE -->

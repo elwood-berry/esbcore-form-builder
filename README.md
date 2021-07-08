@@ -43,8 +43,6 @@ See 'attr-gird.component.html'
 1. Format: Look & Feel - Deletion Confirmation Dialog Window
 
 **THUR, JULY 8, 2021**  
-
-1. click on the header to show dialog.
 1. click on the attribute to show dialog.
 1. click on the menu icon to see menu 
 1. click on the edit icon to show dialog 
@@ -52,6 +50,7 @@ See 'attr-gird.component.html'
 **Completed**  
 1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 
 1. ~~Display/Format Delete button~~
+1. ~~Click on the header to show dialog.~~
 
 ## References
 1. https://stackoverflow.com/questions/35269179/angular-conditional-class-with-ngclass

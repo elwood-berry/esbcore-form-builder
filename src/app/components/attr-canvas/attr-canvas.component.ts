@@ -78,7 +78,7 @@ export class AttrCanvasComponent implements OnInit {
   // DEFINE DISPLAY: 'REQUIRED?'
   public attrRequired(status: boolean) {
     this.status = status;
-    console.log('Status: ', this.status);
+    // console.log('Status: ', this.status);
     return this.status;
   }
 

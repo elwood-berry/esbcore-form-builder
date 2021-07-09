@@ -60,6 +60,8 @@ See 'attr-gird.component.html'
 1. Simulate service to call JSON. 
 1. Change the whole demo to move off data from the JSON file.
 1. [Can you write to the JSON file?](#)
+1. Show a draggable area inside of the expansion panel.
+1. Show the description in the header.
 
 **Completed**  
 1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 

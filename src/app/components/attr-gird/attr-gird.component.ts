@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -16,7 +15,7 @@ export class AttrGirdComponent implements OnInit {
   // CONSTRUCTUR
   constructor(private http: HttpClient) {
     this.http
-      .get('https://jsonplaceholder.typicode.com/posts')
+      .get(this.demoUrl)
       .toPromise()
       .then(data => {
         console.log('DATA', data);

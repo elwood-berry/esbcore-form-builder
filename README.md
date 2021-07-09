@@ -56,7 +56,7 @@ See 'attr-gird.component.html'
 1. Ability to visually add another attribute to the draggagble area. 
 1. Incorporate 'ng-container' into the draggable content array.
 1. Incorpate the "Edit Mode" verus "Static Mode" based on an *ngIf
-
+1. Move DB ofsaved.
 
 **Completed**  
 1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 
@@ -70,7 +70,8 @@ See 'attr-gird.component.html'
 1. [Structural Directives](https://angular.io/guide/structural-directives) 
 
 ### BLOG: TUTORIALS 
-1. [Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
+1. [Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)  
+1. [Creating Reusable Components with NgTemplateOutlet in Angular](https://www.digitalocean.com/community/tutorials/angular-reusable-components-ngtemplateoutlet)
 
 ### STACKOVERFLOW 
 1. https://stackoverflow.com/questions/35269179/angular-conditional-class-with-ngclass

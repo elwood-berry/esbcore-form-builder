@@ -1,6 +1,7 @@
 <div class="attr-canvas-container" cdkDropList (cdkDropListDropped)="drop($event)">
 
-  <ng-container *ngTemplateOutlet="configView"></ng-container>
+  <ng-container *ngTemplateOutlet="tmplStaticSingleAttr"></ng-container>
+  <ng-container *ngTemplateOutlet="tmplStaticMultipleOptionAttr"></ng-container>
 
   <!-- -->
   <mat-accordion *ngFor="let attribute of esbAttributes" cdkDrag>
@@ -175,6 +176,13 @@
 <!-- 
   TEMPLATE: EXPANSION PANEL - MULTI SELECTION
 -->
-<ng-template #configView>
-  <h1>I Am The Template</h1>
+<ng-template #tmplStaticSingleAttr>
+  <div class="attribute-panel" *ngFor="let attribute of esbAttributes" cdkDrag>
+    <h1>I Am The Static Option Attribute</h1>
+  </div>
+</ng-template>
+
+
+<ng-template #tmplStaticMultipleOptionAttr>
+  <h1>I Am The Multiple Option Attribute</h1>
 </ng-template>

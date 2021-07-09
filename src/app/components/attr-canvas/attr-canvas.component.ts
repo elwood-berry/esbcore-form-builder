@@ -117,3 +117,10 @@ export class AttrCanvasComponent implements OnInit {
   templateUrl: '../../../assets/html/confirm-deletion.html'
 })
 export class DialogConfirmDeletion {}
+
+// TEMPLATE: STATIC SINGLE ATTRIBUTE.
+@Component({
+  selector: 'tmpl-static-single-attribute',
+  templateUrl: '../../../assets/html/tmpl-static-single-attribute.html'
+})
+export class TmplStaticSingleAttribute {}

@@ -1,7 +1,9 @@
 <div class="attr-canvas-container" cdkDropList (cdkDropListDropped)="drop($event)">
 
+  <ng-container *ngTemplateOutlet="configView"></ng-container>
+
   <!-- -->
-  <mat-accordion cdkDrag>
+  <mat-accordion *ngFor="let attribute of esbAttributes" cdkDrag>
     <mat-expansion-panel hideToggle>
       <!-- #enddocregion hide-toggle -->
       <mat-expansion-panel-header>
@@ -153,4 +155,26 @@
   </div>
 
 
+
+
+
+
+  <!-- 
+  CONTAINER:EXPANSION PANEL - MULTI SELECTION
+-->
+
+
+
 </div>
+
+
+
+
+
+
+<!-- 
+  TEMPLATE: EXPANSION PANEL - MULTI SELECTION
+-->
+<ng-template #configView>
+  <h1>I Am The Template</h1>
+</ng-template>

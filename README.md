@@ -48,10 +48,29 @@ See 'attr-gird.component.html'
 1. click on the edit icon to show dialog 
 1. Add an expansion panel to the draggable area.
 
+
+**FRI, JULY 9, 2021** 
+1. Style the drag preview to alot for more visual space. 
+1. Get the single and multiple to work together in terms of drag and drop.
+1. Ability to add to the array of objects
+1. Ability to visually add another attribute to the draggagble area. 
+1. Incorporate 'ng-container' into the draggable content array.
+1. Incorpate the "Edit Mode" verus "Static Mode" based on an *ngIf
+
+
 **Completed**  
 1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 
 1. ~~Display/Format Delete button~~
 1. ~~Click on the header to show dialog.~~
 
-## References
+## References 
+
+### ANGULAR 
+1. [NgTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet)
+1. [Structural Directives](https://angular.io/guide/structural-directives) 
+
+### BLOG: TUTORIALS 
+1. [Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)
+
+### STACKOVERFLOW 
 1. https://stackoverflow.com/questions/35269179/angular-conditional-class-with-ngclass

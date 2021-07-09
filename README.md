@@ -56,7 +56,10 @@ See 'attr-gird.component.html'
 1. Ability to visually add another attribute to the draggagble area. 
 1. Incorporate 'ng-container' into the draggable content array.
 1. Incorpate the "Edit Mode" verus "Static Mode" based on an *ngIf
-1. Move DB ofsaved.
+1. Create fake JSON. 
+1. Simulate service to call JSON. 
+1. Change the whole demo to move off data from the JSON file.
+1. [Can you write to the JSON file?](#)
 
 **Completed**  
 1. ~~Display template HTML based on boolean status of checkboxes ('required', 'customer', 'vendor')~~ 
@@ -73,5 +76,15 @@ See 'attr-gird.component.html'
 1. [Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)  
 1. [Creating Reusable Components with NgTemplateOutlet in Angular](https://www.digitalocean.com/community/tutorials/angular-reusable-components-ngtemplateoutlet)
 
+### YOUTUBE 
+
+#### SERVICES
+1. [Angular HTTP GET Example with JSON](https://youtu.be/SYBzE68Ee-g)
+1. [Angular 10 tutorial #27 service](https://youtu.be/eb1VyxVqJ9g)
+
 ### STACKOVERFLOW 
 1. https://stackoverflow.com/questions/35269179/angular-conditional-class-with-ngclass
+
+
+### TOOLS
+1. https://jsonlint.com/

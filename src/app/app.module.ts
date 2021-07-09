@@ -13,7 +13,7 @@ import { AttrHeaderComponent } from './components/attr-header/attr-header.compon
 import { AttrSidebarComponent } from './components/attr-sidebar/attr-sidebar.component';
 import { AttrCanvasComponent } from './components/attr-canvas/attr-canvas.component';
 import { AttrFooterComponent } from './components/attr-footer/attr-footer.component';
-import { SingleAttributeService } from './single-attribute.service';
+import { SingleAttributeService } from './services/single-attribute/single-attribute.service';
 
 @NgModule({
   imports: [

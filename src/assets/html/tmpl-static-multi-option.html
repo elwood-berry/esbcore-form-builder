@@ -1,0 +1,80 @@
+<mat-accordion *ngFor="let attribute of esbAttributes" cdkDrag>
+  <mat-expansion-panel hideToggle>
+    <!-- #enddocregion hide-toggle -->
+    <mat-expansion-panel-header>
+
+      <!-- DRAG HANDLE -->
+      <div class="attr-drag-indicator">
+        <mat-icon aria-hidden="false" aria-label="Drag handle for THIS attribute">drag_indicator</mat-icon>
+      </div>
+
+      <div class="attr-row-info" fxLayout="row">
+
+        <!-- TITLE -->
+        <div class="attr-sec-title" fxLayout="column" fxFlex="50%">
+          <div class="attr-name">Color</div>
+          <div class="attr-placeholder">Please Choose A Color</div>
+        </div>
+
+        <div class="attr-sec-actions" fxLayout="row" fxFlex="50%">
+
+          <!-- REQUIRED? -->
+          <div class="attr-sec-required attr-display-checked">
+            <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
+            <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : true }">
+              check_box</mat-icon>
+            Required
+          </div>
+
+          <!-- VISIBLE TO CUSTOMERS -->
+          <div class="attr-sec-charges-menu attr-display-checked">
+            <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
+            <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : false }">
+              check_box</mat-icon>
+            visible to customers
+          </div>
+
+          <!-- VISIBLE TO VENDORS -->
+          <div class="attr-sec-charges-menu attr-display-checked">
+            <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
+            <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : true }">
+              check_box</mat-icon>
+            visible to vendors
+          </div>
+
+          <!-- CHARGES FOR THIS ATTRIBUTE -->
+          <div class="attr-sec-charges">
+            <button mat-icon-button aria-label="Click here to edit chrages for THIS attribute." (click)="openDialog()">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+          </div>
+
+          <!-- EDIT THIS ATTRIBUTE -->
+          <div class="attr-sec-edit">
+            <button mat-icon-button aria-label="Click here to edit THIS attribute." (click)="openDialog()">
+        <mat-icon>edit</mat-icon>
+      </button>
+          </div>
+
+          <!-- DELETE THIS ATTRIBUTE -->
+          <div class="attr-sec-delete">
+            <button mat-icon-button aria-label="Click here to begin the deletion process for THIS attribute." (click)="openDialog()">
+        <mat-icon>delete</mat-icon>
+      </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+      <!-- <mat-panel-title>
+      This is the expansion title
+    </mat-panel-title>
+    <mat-panel-description>
+      This is a summary of the content
+    </mat-panel-description> -->
+
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+</mat-accordion>

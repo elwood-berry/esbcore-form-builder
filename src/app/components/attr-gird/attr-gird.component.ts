@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DataAttributesService } from '../../services/data-attributes/data-attributes.service';
 
 @Component({
   selector: 'app-attr-gird',
@@ -13,13 +13,17 @@ export class AttrGirdComponent implements OnInit {
   public demoUrl = 'https://jsonplaceholder.typicode.com/posts';
 
   // CONSTRUCTUR
-  constructor(private http: HttpClient) {
-    this.http
-      .get(this.demoUrl)
-      .toPromise()
-      .then(data => {
-        console.log('DATA', data);
-      });
+  constructor(private json: DataAttributesService) {
+    json.getData('../../assets/data/attributes.json').subscribe(result => {
+      console.log(result);
+    });
+
+    // this.http
+    //   .get(this.demoUrl)
+    //   .toPromise()
+    //   .then(data => {
+    //     console.log('DATA', data);
+    //   });
   }
 
   ngOnInit() {}

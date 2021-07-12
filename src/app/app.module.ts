@@ -16,6 +16,7 @@ import { AttrCanvasComponent } from './components/attr-canvas/attr-canvas.compon
 import { AttrFooterComponent } from './components/attr-footer/attr-footer.component';
 import { SingleAttributeService } from './services/single-attribute/single-attribute.service';
 import { DataAttributesService } from './services/data-attributes/data-attributes.service';
+import { AttrItemComponent } from './components/attr-item/attr-item.component';
 
 @NgModule({
   imports: [
@@ -32,7 +33,8 @@ import { DataAttributesService } from './services/data-attributes/data-attribute
     AttrHeaderComponent,
     AttrSidebarComponent,
     AttrCanvasComponent,
-    AttrFooterComponent
+    AttrFooterComponent,
+    AttrItemComponent
   ],
   bootstrap: [AppComponent],
   providers: [SingleAttributeService, DataAttributesService]

@@ -42,22 +42,7 @@
   }
 }
 
-// DRAG HANDLE
-.attr-drag-indicator {
-  background-color: #ccc;
-  border-right: 1px solid #b1b1b1;
-  // cursor: grab;
-  height: inherit;
-  left: 0;
-  position: absolute;
-  width: 25px;
 
-  .mat-icon {
-    color: rgb(168, 168, 168);
-    position: absolute;
-    top: 35%;
-  }
-}
 
 // SECTION: NAME & PLACEHOLDER
 .attr-sec-title {

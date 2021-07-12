@@ -6,41 +6,38 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 
 <div class="attr-canvas-container" cdkDropList (cdkDropListDropped)="drop($event)">
 
-  <!-- <ng-container *ngTemplateOutlet="tmplStaticSingleAttr"></ng-container>
-  <ng-container *ngTemplateOutlet="tmplStaticMultipleOptionAttr"></ng-container> -->
+  <div class="attr-single-item">
+    <app-attr-item></app-attr-item>
+  </div>
 
+  <!-- <ng-container *ngTemplateOutlet="tmplStaticSingleAttr"></ng-container> -->
+  <!-- <ng-container *ngTemplateOutlet="tmplStaticMultipleOptionAttr"></ng-container> -->
   <!-- <mat-accordion *ngFor="let attribute of esbAttributes" cdkDrag></mat-accordion> -->
-
   <!-- <div class="attribute-panel" *ngFor="let attribute of esbAttributes" cdkDrag></div> -->
-
-
-
-
-
-
-  <!-- 
-  CONTAINER:EXPANSION PANEL - MULTI SELECTION
--->
-
-
+  <!-- CONTAINER:EXPANSION PANEL - MULTI SELECTION -->
 
 </div>
 
 
-
-
-
-
-<!-- 
-  TEMPLATE: EXPANSION PANEL - MULTI SELECTION
--->
+<!-- SINGLE ITEM -->
 <ng-template #tmplStaticSingleAttr>
-  <div class="attribute-panel" *ngFor="let attribute of esbAttributes" cdkDrag>
-    <h1>I Am The Static Option Attribute</h1>
+  <div>
+    <app-attr-item></app-attr-item>
   </div>
 </ng-template>
 
 
+<!-- MULTI SELECTION: EXPANSION PANEL -->
 <ng-template #tmplStaticMultipleOptionAttr>
-  <h1>I Am The Multiple Option Attribute</h1>
+  <mat-accordion *ngFor="let attribute of esbAttributes" cdkDrag>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+
+        <app-attr-item></app-attr-item>
+
+        <div class="" *cdkDragPlaceholder></div>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+  </mat-accordion>
 </ng-template>

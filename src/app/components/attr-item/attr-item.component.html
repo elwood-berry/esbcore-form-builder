@@ -4,7 +4,7 @@
 </div>
 
 <!-- TITLE -->
-<div class="attr-sec-title" fxLayout="column" fxFlex="50%">
+<div class="attr-sec-title" fxLayout="column" fxFlex="35%">
 
   <div class="attr-name">
     Name Goes Here
@@ -18,7 +18,7 @@
 
 </div>
 
-<div class="attr-sec-actions" fxLayout="row" fxFlex="50%">
+<div class="attr-sec-actions" fxLayout="row" fxFlex="65%">
 
   <!-- TYPE ('Flat', 'Run') -->
   <div class="setting-display" fxLayout="column">
@@ -29,7 +29,7 @@
   <!-- COST (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="">$</span> 1,000,000
+      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
     </div>
     <div class="">Cost</div>
   </div>
@@ -37,7 +37,7 @@
   <!-- PRICE (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="">$</span> 1,000,000
+      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
     </div>
     <div class="">Price</div>
   </div>
@@ -45,7 +45,7 @@
   <!-- LABOR (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="">$</span> 1,000,000
+      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
     </div>
     <div class="">Labor</div>
   </div>
@@ -53,30 +53,30 @@
   <!-- TIME (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="">$</span> 1,000,000
+      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
     </div>
-    <div class="">Labor</div>
+    <div class="">Time</div>
   </div>
 
   <!-- REQUIRED? -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
     <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : true }">check_box</mat-icon>
-    Required
+    <div class="">Required</div>
   </div>
 
   <!-- VISIBLE TO CUSTOMERS -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
     <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : false }">check_box</mat-icon>
-    visible to customers
+    <div class="">visible to customers</div>
   </div>
 
   <!-- VISIBLE TO VENDORS -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
     <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : true }">check_box</mat-icon>
-    visible to vendors
+    <div class="">visible to vendors</div>
   </div>
 
   <!-- 

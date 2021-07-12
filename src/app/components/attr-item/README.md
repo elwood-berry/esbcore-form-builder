@@ -19,3 +19,7 @@ Represents the cost of labor per hour of the charge.
 
 **Charge Time**: number  
 Represents the cost/hour of the charge. 
+
+### BOOLEANS.
+Condtions of the attribute that are either TRUE or FALSE.
+

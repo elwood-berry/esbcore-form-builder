@@ -118,15 +118,22 @@ SETTINGS
   text-align: center;
   text-transform: uppercase;
   width: 100px;
+
+  &:nth-last-child(even) {
+    background-color: rgb(0, 153, 255);
+  }
+  &:nth-last-child(odd) {
+    background-color: aqua;
+  }
 }
 .setting-value {
+  font-size: 14px;
   font-weight: 400;
   left: 0;
   position: absolute;
-  top: 20px;
-  width: inherit;
   text-align: center;
-  font-size: 14px;
+  top: 20px;
+  width: 100%;
 }
 .setting-title {
 }

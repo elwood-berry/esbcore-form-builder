@@ -34,7 +34,7 @@ export class AttrItemComponent implements OnInit {
   ngOnInit() {}
 
   public displayCharge(value) {
-    console.log('Charge Type: ', value);
+    // console.log('Charge Type: ', value);
 
     if (value === 'No Charge') {
       return true;

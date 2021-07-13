@@ -6,10 +6,17 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 
 <div class="attr-canvas-container" cdkDropList (cdkDropListDropped)="drop($event)">
 
-  <div *ngFor="let attribute of Attributes" [ngSwitch]="attrType" class="attribute-class">
-    <div *ngSwitchCase="single">I am a single attribute</div>
-    <div *ngSwitchCase="multiple">I am a multiple attribute</div>
+  <div *ngFor="let attribute of dataAttributes" class="attribute-class">
+    <div>{{attribute.name}}</div>
+    <!-- <div *ngSwitchCase="single">I am a single attribute</div>
+<div *ngSwitchCase="multiple">I am a multiple attribute</div> -->
   </div><!-- [end] -->
+
+  <!-- <div *ngFor="let attribute of dataAttributes" [ngSwitch]="attrSwitch(attribute.attrType)" class="attribute-class"> -->
+  <!-- <div *ngSwitchCase="single">I am a single attribute</div>
+    <div *ngSwitchCase="multiple">I am a multiple attribute</div> -->
+  <!-- </div>  -->
+  <!-- [end] -->
 
   <!-- <div class="attr- attr-expansion-panel" cdkDrag>
     <app-attr-item [attribute.]="" [attribute.]="" [attribute.]="" [attribute.]="" [attribute.]="" [attribute.]=""

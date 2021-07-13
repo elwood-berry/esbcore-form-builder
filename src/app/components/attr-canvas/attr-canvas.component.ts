@@ -90,6 +90,11 @@ export class AttrCanvasComponent implements OnInit {
     });
   }
 
+  // ATTRIBUTE SWITCH
+  public attrSwitch(value) {
+    console.log('Type: ', value);
+  }
+
   // CDK: Drag & Drop
   public drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(

@@ -14,11 +14,11 @@ import { AttrHeaderComponent } from './components/attr-header/attr-header.compon
 import { AttrSidebarComponent } from './components/attr-sidebar/attr-sidebar.component';
 import { AttrCanvasComponent } from './components/attr-canvas/attr-canvas.component';
 import { AttrFooterComponent } from './components/attr-footer/attr-footer.component';
-import { SingleAttributeService } from './services/single-attribute/single-attribute.service';
-import { DataAttributesService } from './services/data-attributes/data-attributes.service';
+//import { SingleAttributeService } from './services/single-attribute/single-attribute.service';
+//import { DataAttributesService } from './services/data-attributes/data-attributes.service';
 import { AttrItemComponent } from './components/attr-item/attr-item.component';
-import { AttributesServiceService } from './services/attributes-service.service';
-import { AttributesService } from './services/attributes.service';
+//import { AttributesServiceService } from './services/attributes-service.service';
+import { AttributesService } from './services/attributes/attributes.service';
 
 @NgModule({
   imports: [
@@ -39,6 +39,6 @@ import { AttributesService } from './services/attributes.service';
     AttrItemComponent
   ],
   bootstrap: [AppComponent],
-  providers: [SingleAttributeService, DataAttributesService, AttributesServiceService, AttributesService]
+  providers: [AttributesService]
 })
 export class AppModule {}

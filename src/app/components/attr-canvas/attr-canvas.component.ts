@@ -84,8 +84,8 @@ export class AttrCanvasComponent implements OnInit {
   constructor(public dialog: MatDialog, private json: AttributesService) {
     // CONSTRUCTOR - JSON.GETDATA - 'json.getAttributes'
     json.getAttributes(this.urlAttributes).subscribe(result => {
-      console.log('Attributes Data', result[0].settings);
-      this.attributeOptions = result[0].settings; // UPDATE PROPERTY
+      console.log('Attributes Data', result[0].options);
+      this.attributeOptions = result[0].options; // UPDATE PROPERTY
       console.log('New Attributes Data', this.attributeOptions);
     });
   }

@@ -17,6 +17,8 @@ import { AttrFooterComponent } from './components/attr-footer/attr-footer.compon
 import { SingleAttributeService } from './services/single-attribute/single-attribute.service';
 import { DataAttributesService } from './services/data-attributes/data-attributes.service';
 import { AttrItemComponent } from './components/attr-item/attr-item.component';
+import { AttributesServiceService } from './services/attributes-service.service';
+import { AttributesService } from './services/attributes.service';
 
 @NgModule({
   imports: [
@@ -37,6 +39,6 @@ import { AttrItemComponent } from './components/attr-item/attr-item.component';
     AttrItemComponent
   ],
   bootstrap: [AppComponent],
-  providers: [SingleAttributeService, DataAttributesService]
+  providers: [SingleAttributeService, DataAttributesService, AttributesServiceService, AttributesService]
 })
 export class AppModule {}

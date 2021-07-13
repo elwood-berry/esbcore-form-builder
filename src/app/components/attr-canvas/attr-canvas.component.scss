@@ -17,39 +17,24 @@
 }
 
 // EXPANSION PANEL
-.mat-accordion {
-  .mat-expansion-panel {
-    margin-bottom: 5px;
+.attr-expansion-panel {
+  box-shadow: none;
+  margin-bottom: 5px;
 
-    &:first-of-type {
-      border-top-right-radius: 0px;
-      border-top-left-radius: 0px;
-    }
-    &:last-of-type {
-      border-bottom-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
+  &:first-of-type {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  &:last-of-type {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 
-    .mat-expansion-panel-header {
-      height: 75px;
-      padding: 0;
-
-      ::ng-deep .mat-content {
-        height: inherit;
-        padding-left: 43px;
-      }
-    }
+  .mat-expansion-panel-header {
+    height: 75px;
+    padding: 0;
   }
 }
-
-
-
-
-
-
-
-
-
 
 // CDK.
 .cdk-drag-preview {

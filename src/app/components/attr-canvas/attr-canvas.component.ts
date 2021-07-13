@@ -1,16 +1,33 @@
+/*
+APPLICATION NAME GOES HERE
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com 
+*/
+
+// ANGULAR: CORE
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+
+// ANGULAR: MATERIAL
 import { MatDialog } from '@angular/material/dialog';
 
+// SERVICES
+import { AttributesService } from '../../services/attributes/attributes.service';
+
+// COMPONENT DECORATOR
 @Component({
   selector: 'app-attr-canvas',
   templateUrl: './attr-canvas.component.html',
   styleUrls: ['./attr-canvas.component.scss']
 })
+
+// CLASS: ATTRIBUTE CANVAS
 export class AttrCanvasComponent implements OnInit {
   /*
   PROPERTIES.
   ----------------------------------------------- */
+  public urlAttributes: string = 'assets/data/attributes/attributes.json';
+  public dataAttributes: any[];
 
   // TEMPLATES - Used for displaying conditional HTML in the template.
   // public displayRequired = `<strong style="color: #FF0000;">Shut It Down<strong>`; // <span class="material-icons-outlined">check_box</span>
@@ -64,7 +81,14 @@ export class AttrCanvasComponent implements OnInit {
   /*
   CONSTRUCTOR.
   ----------------------------------------------- */
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private json: AttributesService) {
+    // CONSTRUCTOR - JSON.GETDATA - 'json.getAttributes'
+    json.getAttributes(this.urlAttributes).subscribe(result => {
+      console.log('Attributes Data', result);
+      this.dataAttributes = result; // UPDATE PROPERTY
+      console.log('New Attributes Data', this.dataAttributes);
+    });
+  }
 
   // CDK: Drag & Drop
   public drop(event: CdkDragDrop<string[]>) {

@@ -27,7 +27,7 @@ export class AttrCanvasComponent implements OnInit {
   PROPERTIES.
   ----------------------------------------------- */
   public urlAttributes: string = 'assets/data/attributes/attributes.json';
-  public dataAttributes: any[];
+  public attributeOptions: any[];
 
   // TEMPLATES - Used for displaying conditional HTML in the template.
   // public displayRequired = `<strong style="color: #FF0000;">Shut It Down<strong>`; // <span class="material-icons-outlined">check_box</span>
@@ -84,9 +84,9 @@ export class AttrCanvasComponent implements OnInit {
   constructor(public dialog: MatDialog, private json: AttributesService) {
     // CONSTRUCTOR - JSON.GETDATA - 'json.getAttributes'
     json.getAttributes(this.urlAttributes).subscribe(result => {
-      console.log('Attributes Data', result);
-      this.dataAttributes = result; // UPDATE PROPERTY
-      console.log('New Attributes Data', this.dataAttributes);
+      console.log('Attributes Data', result[0].settings);
+      this.attributeOptions = result[0].settings; // UPDATE PROPERTY
+      console.log('New Attributes Data', this.attributeOptions);
     });
   }
 

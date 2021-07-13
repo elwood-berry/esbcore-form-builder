@@ -2,51 +2,18 @@
   "id": 0,
   "name": "Default Business Card",
   "description": "Suspendisse feugiat nisl quis vulputate varius. Curabitur tempor pretium tellus, ut placerat erat porta vitae.",
-  "settings": [{
-    "id": 0,
-    "type": "single",
-    "name": "First Name",
+  "options": [{
+    "optionId": 0,
+    "optionType": "single",
+    "optionName": "First Name",
     "placeholder": "Please provide your first name.",
     "required": false,
-    "visible-vustomer": true,
-    "visible-vendor": false,
-    "order-id": 1,
-    "charges": [{
-      "charge-id": 99,
-      "name": "Type",
-      "value": "Flat"
-    }, {
-      "charge-id": 98,
-      "name": "Cost",
-      "value": 100
-    }, {
-      "charge-id": 97,
-      "name": "Price",
-      "value": 200
-    }, {
-      "charge-id": 96,
-      "name": "Labor",
-      "value": 200
-    }, {
-      "charge-id": 95,
-      "name": "Time",
-      "value": "Flat"
-    }]
+    "visibleCustomer": true,
+    "visibleVendor": false,
+    "chargeType": "Flat",
+    "chargeCost": 100,
+    "chargePrice": 100,
+    "chargeLabor": 100,
+    "chargeTime": 100
   }]
-},
-{
-  "id": 1,
-  "name": "Premium Business Card"
-}, {
-  "id": 2,
-  "name": "Specialty Business Card"
-},
-{
-  "id": 3,
-  "name": "Square Business Card"
-},
-{
-  "id": 4,
-  "name": "Rounded Corner Business Card"
-}
-]
+}]

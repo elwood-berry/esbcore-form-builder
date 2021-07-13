@@ -5,55 +5,46 @@
 
 <!-- TITLE -->
 <div class="attr-sec-title" fxLayout="column" fxFlex="35%">
-
-  <div class="attr-name">
-    Name Goes Here
-    <!-- {{ attribute.name }} -->
-  </div>
-
-  <div class="attr-placeholder">
-    Placeholder Goes Here
-    <!-- {{ attribute.placeholder }} -->
-  </div>
-
+  <div class="attr-name">{{ optionName | titlecase }}</div>
+  <div class="attr-placeholder">{{ placeholder | titlecase }}</div>
 </div>
 
 <div class="attr-sec-actions" fxLayout="row" fxFlex="65%">
 
-  <!-- TYPE ('Flat', 'Run') -->
+  <!-- OPTION CHARGE TYPE (string) -->
   <div class="setting-display" fxLayout="column">
-    <div class="setting-value">Flat</div>
+    <div class="setting-value">{{ chargeType | titlecase }}</div>
     <div class="setting-title">Type</div>
   </div>
 
-  <!-- COST (number) -->
+  <!-- OPTION CHARGE COST (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
+      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeCost }}</span>
     </div>
     <div class="">Cost</div>
   </div>
 
-  <!-- PRICE (number) -->
+  <!-- OPTION CHARGE PRICE (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
+      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargePrice }}</span>
     </div>
     <div class="">Price</div>
   </div>
 
-  <!-- LABOR (number) -->
+  <!-- OPTION CHARGE LABOR (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
+      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeLabor }}</span>
     </div>
     <div class="">Labor</div>
   </div>
 
-  <!-- TIME (number) -->
+  <!-- OPTION CHARGE TIME (number) -->
   <div class="setting-display" fxLayout="column">
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">1,000,000</span>
+      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeTime }}</span>
     </div>
     <div class="">Time</div>
   </div>

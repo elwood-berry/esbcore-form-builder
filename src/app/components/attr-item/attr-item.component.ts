@@ -16,18 +16,18 @@ import { Attribute } from '../../interfaces/attribute/attribute';
 })
 export class AttrItemComponent implements OnInit {
   // INPUT properties.
-  @Input() itemType: Attribute;
-  @Input() name: Attribute;
-  @Input() placeholder: Attribute;
-  @Input() description: Attribute;
-  @Input() type: Attribute[];
-  @Input() cost: Attribute;
-  @Input() price: Attribute;
-  @Input() labor: Attribute;
-  @Input() time: Attribute;
-  @Input() required: Attribute;
-  @Input() visibleCustomer: Attribute;
-  @Input() visibleVendor: Attribute;
+  @Input() optionId: number; // ie. '0'
+  @Input() optionType: string; // ie. 'single'
+  @Input() optionName: string; // ie. 'First Name'
+  @Input() placeholder: string; // ie. 'Please provide your first name.'
+  @Input() required: boolean; // ie. 'false'
+  @Input() visibleCustomer: boolean; // ie. 'false'
+  @Input() visibleVendor: boolean; // ie. 'false'
+  @Input() chargeType: string; // ie. 'Flat'
+  @Input() chargeCost: number; // ie. '100'
+  @Input() chargePrice: number; // ie. '100'
+  @Input() chargeLabor: number; // ie. '100'
+  @Input() chargeTime: number; // ie. '100'
 
   constructor() {}
 

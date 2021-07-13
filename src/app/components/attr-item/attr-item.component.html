@@ -12,61 +12,64 @@
 <div class="attr-sec-actions" fxLayout="row" fxFlex="65%">
 
   <!-- OPTION CHARGE TYPE (string) -->
-  <div class="setting-display" fxLayout="column">
+  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
     <div class="setting-value">{{ chargeType | titlecase }}</div>
     <div class="setting-title">Type</div>
   </div>
 
   <!-- OPTION CHARGE COST (number) -->
-  <div class="setting-display" fxLayout="column">
+  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
     <div class="setting-value" fxLayout="row">
       <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeCost }}</span>
     </div>
-    <div class="">Cost</div>
+    <div class="setting-title">Cost</div>
   </div>
 
   <!-- OPTION CHARGE PRICE (number) -->
-  <div class="setting-display" fxLayout="column">
+  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
     <div class="setting-value" fxLayout="row">
       <span class="currency-symbol">$</span> <span class="currency-value">{{ chargePrice }}</span>
     </div>
-    <div class="">Price</div>
+    <div class="setting-title">Price</div>
   </div>
 
   <!-- OPTION CHARGE LABOR (number) -->
-  <div class="setting-display" fxLayout="column">
+  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
     <div class="setting-value" fxLayout="row">
       <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeLabor }}</span>
     </div>
-    <div class="">Labor</div>
+    <div class="setting-title">Labor</div>
   </div>
 
   <!-- OPTION CHARGE TIME (number) -->
-  <div class="setting-display" fxLayout="column">
+  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
     <div class="setting-value" fxLayout="row">
       <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeTime }}</span>
     </div>
-    <div class="">Time</div>
+    <div class="setting-title">Time</div>
   </div>
 
   <!-- REQUIRED? -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
-    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : true }">check_box</mat-icon>
+    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : required }">check_box
+    </mat-icon>
     <div class="">Required</div>
   </div>
 
   <!-- VISIBLE TO CUSTOMERS -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
-    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : false }">check_box</mat-icon>
+    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : visibleCustomer }">check_box
+    </mat-icon>
     <div class="">visible to customers</div>
   </div>
 
   <!-- VISIBLE TO VENDORS -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
-    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : true }">check_box</mat-icon>
+    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : visibleVendor }">check_box
+    </mat-icon>
     <div class="">visible to vendors</div>
   </div>
 

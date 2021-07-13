@@ -32,4 +32,17 @@ export class AttrItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  public displayCharge(value) {
+    console.log('Charge Type: ', value);
+
+    if (value === 'No Charge') {
+      return true;
+    }
+  }
+
+  //
+  public displayCheckbox(value) {
+    console.log('Required? : ', value);
+  }
 }

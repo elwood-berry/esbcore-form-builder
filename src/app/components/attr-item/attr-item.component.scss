@@ -154,3 +154,16 @@ SETTINGS
 }
 .setting-title {
 }
+.no-setting-display {
+  .setting-value {
+    display: none !important;
+  }
+  .setting-title {
+    display: none !important;
+  }
+}
+
+// ---
+.display-no-checkbox {
+  display: none !important;
+}

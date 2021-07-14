@@ -25,7 +25,7 @@
     box-shadow: none;
 
     .mat-expansion-panel-header {
-      background-color: #00ff2a; // map-get($core-demo, charlie
+      background-color: map-get($core-demo, alpha);
       padding: 0;
     }
   }

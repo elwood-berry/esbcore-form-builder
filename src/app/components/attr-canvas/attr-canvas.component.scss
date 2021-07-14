@@ -9,7 +9,7 @@ Load the default theme wrapper. This code is brought to you by Elwood Berry http
 // CANVAS CONTAINER.
 // Container holds attribute items.
 .attr-canvas-container {
-  background-color: map-get($core-demo, bravo); // RGB: 236 236 236
+  background-color: #e0e0e0; // map-get($core-demo, bravo); // RGB: 236 236 236
   height: inherit;
   overflow-y: scroll;
   padding: 5px;

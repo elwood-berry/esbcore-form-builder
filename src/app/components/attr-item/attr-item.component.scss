@@ -14,7 +14,7 @@ $color-2C: #2c2c2c;
 
 // -------------------------------------
 :host {
-  background-color: $color-FFF;
+  background-color: map-get($core-gray, FFF);
   height: 75px;
   position: relative;
   width: 100%;

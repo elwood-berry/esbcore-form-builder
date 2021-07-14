@@ -17,7 +17,7 @@ MATERIAL
 LOAD.CORE
 Load the default theme wrapper.
 */
-@import 'assets/scss/core';
+@import 'assets/scss/core.css';
 
 /*
 -------------------------------------------------

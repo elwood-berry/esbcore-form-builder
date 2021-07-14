@@ -1,8 +1,9 @@
-<!-- 
+/*
 APPLICATION NAME GOES HERE
 Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
--->
+*/
 
-<div class="testme">hello</div>
-<app-attr-gird></app-attr-gird>
+.testme {
+  background-color: map-get($core-gray, FFF);
+}

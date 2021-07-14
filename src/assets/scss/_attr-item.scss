@@ -59,6 +59,33 @@
       position: absolute;
       right: 0;
     }
+
+    // SECTION: SETTINGS
+    .setting-display {
+      font-size: 9px;
+      font-weight: 100;
+      height: 35px;
+      padding: 40px 0 0 0;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      width: 125px;
+
+      // CHECKBOX OUTLINE.
+      .checkbox-outline {
+        position: absolute;
+        top: 15px;
+        width: 100%;
+        z-index: 1;
+      }
+      // CHECKBOX CHECKBOX.
+      .display-checkbox {
+        position: absolute;
+        top: 15px;
+        width: 100%;
+        z-index: 5;
+      }
+    }
   } // [end] 'attribute-item'
 
   // [expansion panel] -------------------  .

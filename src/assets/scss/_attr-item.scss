@@ -17,6 +17,23 @@
     min-height: 75px;
     padding-left: 40px;
     position: relative;
+    width: 100%;
+
+    // DRAG HANDLE
+    .attr-drag-indicator {
+      background-color: $color-CCC;
+      border-right: 1px solid $color-B1;
+      height: inherit;
+      left: 0;
+      position: absolute;
+      width: 25px;
+
+      .mat-icon {
+        color: $color-A8;
+        position: absolute;
+        top: 35%;
+      }
+    }
   }
 
   // [expansion panel] -------------------  .

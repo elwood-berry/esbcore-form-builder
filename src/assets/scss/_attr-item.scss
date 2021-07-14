@@ -71,6 +71,18 @@
       text-transform: uppercase;
       width: 125px;
 
+      .setting-value {
+        align-content: center;
+        font-size: 14px;
+        font-weight: 400;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 20px;
+        width: 100%;
+      }
+
       // CHECKBOX OUTLINE.
       .checkbox-outline {
         position: absolute;

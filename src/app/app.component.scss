@@ -4,6 +4,13 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */
 
+/*
+LOAD.CORE
+Load the default theme wrapper.
+*/
+
+@import '../assets/scss/core';
+
 .testme {
-  background-color: map-get($core-gray, FFF);
+  background-color: #ff0000;
 }

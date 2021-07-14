@@ -16,8 +16,12 @@ MATERIAL
 /*
 LOAD.CORE
 Load the default theme wrapper.
-*/
 @import 'assets/scss/core.css';
+*/
+
+/*
+ATTRIBUTE ITEM HEAD
+*/
 
 /*
 -------------------------------------------------

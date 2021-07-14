@@ -79,12 +79,18 @@ See 'attr-gird.component.html'
 ### ANGULAR 
 1. [NgTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet)
 1. [Structural Directives](https://angular.io/guide/structural-directives) 
+https://angular.io/api/common/NgSwitch
+https://angular.io/guide/content-projection
 
 ### BLOG: TUTORIALS 
 1. [Angular ng-template, ng-container and ngTemplateOutlet - The Complete Guide To Angular Templates](https://blog.angular-university.io/angular-ng-template-ng-container-ngtemplateoutlet/)  
 1. [Creating Reusable Components with NgTemplateOutlet in Angular](https://www.digitalocean.com/community/tutorials/angular-reusable-components-ngtemplateoutlet)
+1. [How To Use An Interface In Angular](https://vegibit.com/how-to-use-an-interface-in-angular/)
 
 ### YOUTUBE 
+1. [TypeScript Interfaces](https://youtu.be/P17bFRuefjA)
+1. [Angular Tutorial - 13 - ngSwitch Directive](https://youtu.be/WiDn2y1Ktws)
+1. [Angular ng-template - Introduction to Angular Template Partials](https://youtu.be/Qp0ghO3LLYI)
 
 #### SERVICES
 1. [Angular HTTP GET Example with JSON](https://youtu.be/SYBzE68Ee-g)

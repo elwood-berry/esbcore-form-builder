@@ -132,20 +132,41 @@ ITEMS
 
 ---  
 
-**FOXTROT**  
+**FOXTROT** - Template #1 (SINGLE)  
 1. Displays the draggable area.
 2. Loops through the data using *ngFor.
 
 ```html  
-<div class="attr-canvas-container version-99" cdkDropList (cdkDropListDropped)="drop($event)">
 
-  <div *ngFor="let option of attributeOptions" class="attribute-option" cdkDrag>
-    <app-attr-item [optionId]="option.attrId" [optionType]="option.optionType" [optionName]="option.optionName"
-      [placeholder]="option.placeholder" [required]="option.required" [visibleCustomer]="option.visibleCustomer"
-      [visibleVendor]="option.visibleVendor" [chargeType]="option.chargeType" [chargeCost]="option.chargeCost"
-      [chargePrice]="option.chargePrice" [chargeLabor]="option.chargeLabor" [chargeTime]="option.chargeTime">
-    </app-attr-item>
-  </div>
 
-</div>
+<app-attr-item [optionId]="option.attrId" [optionType]="option.optionType" [optionName]="option.optionName"
+  [placeholder]="option.placeholder" [required]="option.required" [visibleCustomer]="option.visibleCustomer"
+  [visibleVendor]="option.visibleVendor" [chargeType]="option.chargeType" [chargeCost]="option.chargeCost"
+  [chargePrice]="option.chargePrice" [chargeLabor]="option.chargeLabor" [chargeTime]="option.chargeTime">
+</app-attr-item>
+
+```  
+
+---  
+
+**GOLF** - Template #2 (SINGLE)  
+1. Displays the draggable area.
+2. Loops through the data using *ngFor.
+
+```html  
+
+<mat-expansion-panel hideToggle>
+
+  <mat-expansion-panel-header>
+
+    <app-attr-item class="attribute-item" [optionId]="option.attrId" [optionType]="option.optionType" [optionName]="option.optionName"
+    [placeholder]="option.placeholder" [required]="option.required" [visibleCustomer]="option.visibleCustomer"
+    [visibleVendor]="option.visibleVendor" [chargeType]="option.chargeType" [chargeCost]="option.chargeCost"
+    [chargePrice]="option.chargePrice" [chargeLabor]="option.chargeLabor" [chargeTime]="option.chargeTime"></app-attr-item>
+
+  </mat-expansion-panel-header>
+  <p>This is the primary content of the panel.</p>
+  
+</mat-expansion-panel>
+
 ```  

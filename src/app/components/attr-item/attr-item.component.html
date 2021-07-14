@@ -1,6 +1,8 @@
 <!-- DRAG HANDLE -->
 <div class="attr-drag-indicator">
-  <mat-icon aria-hidden="false" aria-label="Drag handle for THIS attribute">drag_indicator</mat-icon>
+  <mat-icon aria-hidden="false" aria-label="Drag handle for THIS attribute"
+    >drag_indicator</mat-icon
+  >
 </div>
 
 <!-- TITLE -->
@@ -10,41 +12,64 @@
 </div>
 
 <div class="attr-sec-actions" fxLayout="row" fxFlex="65%">
-
   <!-- OPTION CHARGE TYPE (string) -->
-  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
+  <div
+    class="setting-display"
+    fxLayout="column"
+    [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }"
+  >
     <div class="setting-value">{{ chargeType | titlecase }}</div>
     <div class="setting-title">Type</div>
   </div>
 
   <!-- OPTION CHARGE COST (number) -->
-  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
+  <div
+    class="setting-display"
+    fxLayout="column"
+    [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }"
+  >
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeCost }}</span>
+      <span class="currency-symbol">$</span>
+      <span class="currency-value">{{ chargeCost }}</span>
     </div>
     <div class="setting-title">Cost</div>
   </div>
 
   <!-- OPTION CHARGE PRICE (number) -->
-  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
+  <div
+    class="setting-display"
+    fxLayout="column"
+    [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }"
+  >
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargePrice }}</span>
+      <span class="currency-symbol">$</span>
+      <span class="currency-value">{{ chargePrice }}</span>
     </div>
     <div class="setting-title">Price</div>
   </div>
 
   <!-- OPTION CHARGE LABOR (number) -->
-  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
+  <div
+    class="setting-display"
+    fxLayout="column"
+    [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }"
+  >
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeLabor }}</span>
+      <span class="currency-symbol">$</span>
+      <span class="currency-value">{{ chargeLabor }}</span>
     </div>
     <div class="setting-title">Labor</div>
   </div>
 
   <!-- OPTION CHARGE TIME (number) -->
-  <div class="setting-display" fxLayout="column" [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }">
+  <div
+    class="setting-display"
+    fxLayout="column"
+    [ngClass]="{ 'no-setting-display' : displayCharge(chargeType) }"
+  >
     <div class="setting-value" fxLayout="row">
-      <span class="currency-symbol">$</span> <span class="currency-value">{{ chargeTime }}</span>
+      <span class="currency-symbol">$</span>
+      <span class="currency-value">{{ chargeTime }}</span>
     </div>
     <div class="setting-title">Time</div>
   </div>
@@ -52,7 +77,10 @@
   <!-- REQUIRED? -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
-    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : required }">check_box
+    <mat-icon
+      class="display-checkbox"
+      [ngClass]="{ 'display-no-checkbox' : required }"
+      >check_box
     </mat-icon>
     <div class="">Required</div>
   </div>
@@ -60,7 +88,10 @@
   <!-- VISIBLE TO CUSTOMERS -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
-    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : visibleCustomer }">check_box
+    <mat-icon
+      class="display-checkbox"
+      [ngClass]="{ 'display-no-checkbox' : visibleCustomer }"
+      >check_box
     </mat-icon>
     <div class="">visible to customers</div>
   </div>
@@ -68,7 +99,10 @@
   <!-- VISIBLE TO VENDORS -->
   <div class="setting-display" fxLayout="column">
     <mat-icon class="checkbox-outline">check_box_outline_blank</mat-icon>
-    <mat-icon class="display-checkbox" [ngClass]="{ 'display-no-checkbox' : visibleVendor }">check_box
+    <mat-icon
+      class="display-checkbox"
+      [ngClass]="{ 'display-no-checkbox' : visibleVendor }"
+      >check_box
     </mat-icon>
     <div class="">visible to vendors</div>
   </div>
@@ -85,17 +119,19 @@
   </div> -->
 
   <!-- EDIT THIS ATTRIBUTE -->
-  <div class="attr-sec-edit">
+  <div class="attr-action-button attr-sec-edit">
     <button mat-icon-button aria-label="Click here to edit THIS attribute.">
       <mat-icon>edit</mat-icon>
     </button>
   </div>
 
   <!-- DELETE THIS ATTRIBUTE -->
-  <div class="attr-sec-delete">
-    <button mat-icon-button aria-label="Click here to begin the deletion process for THIS attribute.">
+  <div class="attr-action-button attr-sec-delete">
+    <button
+      mat-icon-button
+      aria-label="Click here to begin the deletion process for THIS attribute."
+    >
       <mat-icon>delete</mat-icon>
     </button>
   </div>
-
 </div>

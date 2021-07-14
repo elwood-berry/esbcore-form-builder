@@ -99,19 +99,32 @@
         }
       } // [end] 'setting-display'
 
-      // EDIT.
-      .attr-sec-edit {
+      // ACTION BUTTONS
+      .attr-action-button {
         background-color: aquamarine;
-        border-left: 1px solid;
+        border-left: 1px solid #dddddd;
+        padding: 5px 0 0 0;
         width: 50px;
+
+        &:first-of-type {
+          box-shadow: 1px 1px 1px #000000;
+        }
       }
 
+      // .attr-sec-edit {
+      //   background-color: aquamarine;
+      //   border-left: 1px solid;
+      //   padding: 5px 0 0 0;
+      //   width: 50px;
+      // }
+
       // DELETE.
-      .attr-sec-delete {
-        background-color: aquamarine;
-        border-left: 1px solid;
-        width: 50px;
-      }
+      // .attr-sec-delete {
+      //   background-color: aquamarine;
+      //   border-left: 1px solid;
+      //   padding: 5px 0 0 0;
+      //   width: 50px;
+      // }
     } // [end] 'attr-sec-actions'
   } // [end] 'attribute-item'
 

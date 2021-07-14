@@ -58,61 +58,64 @@
     ::ng-deep .attr-sec-actions {
       position: absolute;
       right: 0;
-    }
 
-    // SECTION: SETTINGS
-    ::ng-deep .setting-display {
-      background-color: aqua;
-      font-size: 9px;
-      font-weight: 100;
-      height: 50px;
-      position: relative;
-      text-align: center;
-      text-transform: uppercase;
-      width: 125px;
-
-      // DISPLAY VALUES
-      .setting-value {
-        align-content: center;
-        font-size: 14px;
-        font-weight: 400;
-        justify-content: center;
-        left: 0;
-        position: absolute;
+      // SECTION: SETTINGS
+      .setting-display {
+        background-color: aqua;
+        font-size: 9px;
+        font-weight: 100;
+        height: 50px;
+        position: relative;
         text-align: center;
-        top: 20px;
-        width: 100%;
-      }
+        text-transform: uppercase;
+        width: 125px;
 
-      // DISPLAY CHECKBOX OUTLINE.
-      .checkbox-outline {
-        position: absolute;
-        top: 15px;
-        width: 100%;
-        z-index: 1;
-      }
-      // DISPLAY CHECKBOX CHECKBOX.
-      .display-checkbox {
-        position: absolute;
-        top: 15px;
-        width: 100%;
-        z-index: 5;
-      }
+        // DISPLAY VALUES
+        .setting-value {
+          align-content: center;
+          font-size: 14px;
+          font-weight: 400;
+          justify-content: center;
+          left: 0;
+          position: absolute;
+          text-align: center;
+          top: 20px;
+          width: 100%;
+        }
 
-      // EDIT.
-      .attr-sec-edit {
-        background-color: aquamarine;
-        border-left: 1px solid;
-        width: 50px;
-      }
+        // DISPLAY CHECKBOX OUTLINE.
+        .checkbox-outline {
+          position: absolute;
+          top: 15px;
+          width: 100%;
+          z-index: 1;
+        }
+        // DISPLAY CHECKBOX CHECKBOX.
+        .display-checkbox {
+          position: absolute;
+          top: 15px;
+          width: 100%;
+          z-index: 5;
+        }
 
-      // DELETE.
-      .attr-sec-delete {
-        background-color: aquamarine;
-        border-left: 1px solid;
-        width: 50px;
-      }
-    }
+        // EDIT.
+        .attr-sec-edit {
+          background-color: aquamarine;
+          border-left: 1px solid;
+          width: 50px;
+        }
+
+        // DELETE.
+        .attr-sec-delete {
+          background-color: aquamarine;
+          border-left: 1px solid;
+          width: 50px;
+        }
+
+      } // [end] 'setting-display'
+
+    } // [end] 'attr-sec-actions' 
+
   } // [end] 'attribute-item'
 
   // [expansion panel] -------------------  .

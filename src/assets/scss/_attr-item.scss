@@ -21,7 +21,13 @@
 
   // [expansion panel] -------------------  .
   .mat-expansion-panel {
-    background-color: #ff0000; // map-get($core-demo, charlie
+    border-radius: 0;
+    box-shadow: none;
+
+    .mat-expansion-panel-header {
+      background-color: #00ff2a; // map-get($core-demo, charlie
+      padding: 0;
+    }
   }
 
   // EXPANSION PANEL

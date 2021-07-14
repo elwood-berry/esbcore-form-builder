@@ -106,7 +106,8 @@
         padding: 5px 0 0 0;
         width: 50px;
 
-        &:first-of-type {
+        &:nth-child(1) {
+          background-color: #ff0000;
           box-shadow: 1px 1px 1px #000000;
         }
       }

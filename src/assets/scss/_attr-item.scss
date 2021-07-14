@@ -20,7 +20,7 @@
     width: 100%;
 
     // DRAG HANDLE
-    .attr-drag-indicator {
+    ::ng-deep .attr-drag-indicator {
       background-color: #ccc;
       border-right: 1px solid #b1b1b1;
       height: inherit;

@@ -1,0 +1,207 @@
+/*
+CORE  
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry https://elwoodberry.com
+*/
+
+// OPACITY
+/*
+CORE  
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry https://elwoodberry.com
+*/
+
+// OPACITY
+$percent10: 1a;
+$percent30: 4d;
+$percent50: 80;
+$percent90: E6;
+
+// GRAY
+$core-gray: (
+  000: #000000,
+  000-10: #0000001a,
+  // 1A
+    000-30: #0000004d,
+  // 4D
+    000-50: #00000080,
+  // 80
+    000-90: #000000e6,
+  // E6
+    222: #222222,
+  333: #333333,
+  444: #444444,
+  555: #555555,
+  555-90: #555555e6,
+  666: #666666,
+  777: #777777,
+  888: #888888,
+  999: #999999,
+  AAA: #aaaaaa,
+  BBB: #bbbbbb,
+  CCC: #cccccc,
+  DDD: #dddddd,
+  EEE: #eeeeee,
+  E5: #e5e5e5,
+  E5-10: #e5e5e51a,
+  E5-30: #e5e5e54d,
+  F9: #f9f9f9,
+  F0: #f0f0f0,
+  FFF: #ffffff
+);
+
+// BLUE
+$core-blue: (
+  alpha: #657d94,
+  alpha-10: #657d941a,
+  alpha-30: #657d944d,
+  alpha-50: #657d9480,
+  alpha-90: #657d94e6,
+  bravo: #003261,
+  bravo-10: #0032611a,
+  bravo-30: #0032614d,
+  bravo-50: #00326180,
+  bravo-90: #003261e6,
+  charlie: #313c47,
+  charlie-10: #313c471a,
+  charlie-30: #313c474d,
+  charlie-50: #313c4780,
+  charlie-90: #313c47e6,
+  delta: #346594,
+  delta-10: #3465941a,
+  delta-30: #3465944d,
+  delta-50: #34659480,
+  delta-90: #346594e6,
+  echo: #97bcde,
+  echo-10: #97bcde1a,
+  echo-30: #97bcde4d,
+  echo-50: #97bcde80,
+  echo-90: #97bcdee6,
+  foxtrot: #2d313e,
+  foxtrot-10: #2d313e1a,
+  foxtrot-30: #2d313e4d,
+  foxtrot-50: #2d313e80,
+  foxtrot-90: #2d313ee6,
+  golf: #346594,
+  golf-10: #3465941a,
+  golf-30: #3465944d,
+  golf-50: #34659480,
+  golf-90: #346594e6,
+  hotel: #058ec0,
+  hotel-10: #058ec01a,
+  hotel-30: #058ec04d,
+  hotel-50: #058ec080,
+  hotel-90: #058ec0e6
+);
+
+// TEXT COLORS
+// The color of the text in the elements.
+$core-text-color: (
+  primary: #346594,
+  secondary: #346594,
+  light: #346594,
+  dark: #346594,
+  success: #346594,
+  danger: #346594,
+  warning: #b71c1c
+);
+
+// ALERTS
+$core-alert: (
+  warning: #b71c1c,
+  completed: #6ba02e,
+  incomplete: #ffbb00,
+  important: #fffee5
+);
+
+// DEMO
+// Colors used for demo purposes only
+$core-demo: (
+  alpha: #0000ff1a,
+  bravo: #ff00001a,
+  charlie: #ffff001a,
+  delta: #ff66001a,
+  echo: #00ff001a,
+  foxtrot: #6600ff1a,
+  golf: #44858e1a,
+  hotel: #0019561a
+);
+
+);
+
+// BLUE
+$core-blue: (
+  alpha: #657d94,
+  alpha-10: #657d941a,
+  alpha-30: #657d944d,
+  alpha-50: #657d9480,
+  alpha-90: #657d94e6,
+  bravo: #003261,
+  bravo-10: #0032611a,
+  bravo-30: #0032614d,
+  bravo-50: #00326180,
+  bravo-90: #003261e6,
+  charlie: #313c47,
+  charlie-10: #313c471a,
+  charlie-30: #313c474d,
+  charlie-50: #313c4780,
+  charlie-90: #313c47e6,
+  delta: #346594,
+  delta-10: #3465941a,
+  delta-30: #3465944d,
+  delta-50: #34659480,
+  delta-90: #346594e6,
+  echo: #97bcde,
+  echo-10: #97bcde1a,
+  echo-30: #97bcde4d,
+  echo-50: #97bcde80,
+  echo-90: #97bcdee6,
+  foxtrot: #2d313e,
+  foxtrot-10: #2d313e1a,
+  foxtrot-30: #2d313e4d,
+  foxtrot-50: #2d313e80,
+  foxtrot-90: #2d313ee6,
+  golf: #346594,
+  golf-10: #3465941a,
+  golf-30: #3465944d,
+  golf-50: #34659480,
+  golf-90: #346594e6,
+  hotel: #058ec0,
+  hotel-10: #058ec01a,
+  hotel-30: #058ec04d,
+  hotel-50: #058ec080,
+  hotel-90: #058ec0e6
+);
+
+// TEXT COLORS
+// The color of the text in the elements.
+$core-text-color: (
+  primary: #346594,
+  secondary: #346594,
+  light: #346594,
+  dark: #346594,
+  success: #346594,
+  danger: #346594,
+  warning: #b71c1c
+);
+
+// ALERTS
+$core-alert: (
+  warning: #b71c1c,
+  completed: #6ba02e,
+  incomplete: #ffbb00,
+  important: #fffee5
+);
+
+// DEMO
+// Colors used for demo purposes only
+$core-demo: (
+  alpha: #0000ff1a,
+  bravo: #ff00001a,
+  charlie: #ffff001a,
+  delta: #ff66001a,
+  echo: #00ff001a,
+  foxtrot: #6600ff1a,
+  golf: #44858e1a,
+  hotel: #0019561a
+);

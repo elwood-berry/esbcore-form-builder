@@ -62,7 +62,6 @@ See 'attr-gird.component.html'
 
 
 **TUES, JULY 13, 2021** 
-1. Loop through JSON to display the attributes.
 1. Display template based on settings in the data.
 
 
@@ -73,6 +72,7 @@ See 'attr-gird.component.html'
 1. ~~Display the charges menu~~  
 1. ~~Confirmation dialog for deleting~~
 1. ~~click on the menu icon to see menu~~ 
+1. ~~Loop through JSON to display the attributes.~~
 
 ## References 
 

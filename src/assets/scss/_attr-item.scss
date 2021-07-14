@@ -37,8 +37,8 @@
 
     // SECTION: NAME & PLACEHOLDER
     ::ng-deep .attr-sec-title {
-      padding-left: 40px;
-      padding-top: 20px;
+      padding-left: 0px;
+      padding-top: 10px;
       width: 225px;
 
       // ATTRIBUTE NAME
@@ -53,7 +53,13 @@
         font-size: 12px;
       }
     }
-  }
+
+    // SECTION: ACTION BUTTONS & CHECKBOX
+    ::ng-deep .attr-sec-actions {
+      position: absolute;
+      right: 0;
+    }
+  } // [end] 'attribute-item'
 
   // [expansion panel] -------------------  .
   .mat-expansion-panel {

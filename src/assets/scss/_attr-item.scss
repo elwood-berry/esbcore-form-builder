@@ -70,7 +70,7 @@
         text-transform: uppercase;
         width: 125px;
 
-        &:last-of-type {
+        &:last-child {
           box-shadow: 15px 0px 20px #cccccc;
         }
 
@@ -109,11 +109,6 @@
         border-left: 1px solid #dddddd;
         padding: 5px 0 0 0;
         width: 50px;
-
-        &:nth-child(1) {
-          background-color: #ff0000;
-          box-shadow: 1px 1px 1px #000000;
-        }
       }
 
       // .attr-sec-edit {

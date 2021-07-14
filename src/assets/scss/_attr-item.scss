@@ -61,7 +61,7 @@
 
       // SECTION: SETTINGS
       .setting-display {
-        background-color: rgba(0, 255, 255, 0.15);
+        // background-color: rgba(0, 255, 255, 0.15);
         font-size: 9px;
         font-weight: 100;
         height: 50px;
@@ -100,14 +100,14 @@
         // DISPLAY CHECKBOX OUTLINE.
         .checkbox-outline {
           position: absolute;
-          top: 15px;
+          top: 10px;
           width: 100%;
           z-index: 1;
         }
         // DISPLAY CHECKBOX CHECKBOX.
         .display-checkbox {
           position: absolute;
-          top: 15px;
+          top: 10px;
           width: 100%;
           z-index: 5;
         }

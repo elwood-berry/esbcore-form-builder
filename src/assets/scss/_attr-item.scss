@@ -1,6 +1,6 @@
 // ATTRIBUTE OPTION (SINGLE & MULTIPLE)
 .attribute-option {
-  background-color: map-get($core-demo, alpha);
+  // background-color: map-get($core-demo, alpha);
   margin-bottom: 6px;
 
   &:hover {
@@ -10,7 +10,7 @@
 
   // ATTRIBUTE PANEL.
   .attribute-item {
-    background-color: map-get($core-demo, alpha);
+    // background-color: map-get($core-demo, alpha);
     cursor: grab;
     height: 48px;
     margin-bottom: 5px;
@@ -42,7 +42,7 @@
     box-shadow: none;
 
     .mat-expansion-panel-header {
-      background-color: map-get($core-demo, alpha);
+      // background-color: map-get($core-demo, alpha);
       padding: 0;
     }
   }

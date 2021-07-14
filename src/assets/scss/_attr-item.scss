@@ -97,25 +97,22 @@
           width: 100%;
           z-index: 5;
         }
-
-        // EDIT.
-        .attr-sec-edit {
-          background-color: aquamarine;
-          border-left: 1px solid;
-          width: 50px;
-        }
-
-        // DELETE.
-        .attr-sec-delete {
-          background-color: aquamarine;
-          border-left: 1px solid;
-          width: 50px;
-        }
-
       } // [end] 'setting-display'
 
-    } // [end] 'attr-sec-actions' 
+      // EDIT.
+      .attr-sec-edit {
+        background-color: aquamarine;
+        border-left: 1px solid;
+        width: 50px;
+      }
 
+      // DELETE.
+      .attr-sec-delete {
+        background-color: aquamarine;
+        border-left: 1px solid;
+        width: 50px;
+      }
+    } // [end] 'attr-sec-actions'
   } // [end] 'attribute-item'
 
   // [expansion panel] -------------------  .

@@ -1,10 +1,46 @@
-// ATTRIBUTE PANEL.
-.attribute-panel {
+// ATTRIBUTE OPTION (SINGLE & MULTIPLE)
+.attribute-option {
   background-color: map-get($core-demo, alpha);
-  cursor: grab;
-  height: 75px;
   margin-bottom: 5px;
-  min-height: 75px;
-  padding-left: 40px;
-  position: relative;
-}
+
+  &:hover {
+  }
+
+  // [children] -------------------------  .
+
+  // ATTRIBUTE PANEL.
+  .attribute-item {
+    background-color: map-get($core-demo, alpha);
+    cursor: grab;
+    height: 75px;
+    margin-bottom: 5px;
+    min-height: 75px;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  // [expansion panel] -------------------  .
+  ::ng-deep .mat-expansion-panel {
+    background-color: background-color: #FF0000; // map-get($core-demo, charlie
+  }
+
+  // EXPANSION PANEL
+  .attr-expansion-panel {
+    box-shadow: none;
+    margin-bottom: 5px;
+
+    &:first-of-type {
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    &:last-of-type {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    .mat-expansion-panel-header {
+      height: 75px;
+      padding: 0;
+    }
+  }
+} // [end] ATTRIBUTE OPTION (SINGLE & MULTIPLE)

@@ -8,16 +8,16 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 
   <div *ngFor="let option of attributeOptions" class="attribute-option" cdkDrag>
 
-    
-
     <mat-expansion-panel hideToggle>
-    <!-- #enddocregion hide-toggle -->
-        <mat-expansion-panel-header>
-        <app-attr-item [optionId]="option.attrId" [optionType]="option.optionType" [optionName]="option.optionName"
+
+      <mat-expansion-panel-header>
+
+        <app-attr-item class="attribute-item" [optionId]="option.attrId" [optionType]="option.optionType" [optionName]="option.optionName"
         [placeholder]="option.placeholder" [required]="option.required" [visibleCustomer]="option.visibleCustomer"
         [visibleVendor]="option.visibleVendor" [chargeType]="option.chargeType" [chargeCost]="option.chargeCost"
         [chargePrice]="option.chargePrice" [chargeLabor]="option.chargeLabor" [chargeTime]="option.chargeTime">
       </app-attr-item>
+      
           <!-- <mat-panel-title>
             This is the expansion title
           </mat-panel-title>

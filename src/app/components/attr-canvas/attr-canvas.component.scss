@@ -6,41 +6,13 @@ Load the default theme wrapper. This code is brought to you by Elwood Berry http
 
 @import '../../../assets/scss/core';
 
+// CANVAS CONTAINER.
+// Container holds attribute items.
 .attr-canvas-container {
-  background-color: rgb(236, 236, 236);
+  background-color: map-get($core-demo, bravo); // RGB: 236 236 236
   height: inherit;
   overflow-y: scroll;
   padding: 5px;
-}
-
-// ATTRIBUTE OPTION (SINGLE & MULTIPLE)
-.attribute-option {
-  margin-bottom: 5px;
-
-  &:hover {
-  }
-}
-
-
-
-// EXPANSION PANEL
-.attr-expansion-panel {
-  box-shadow: none;
-  margin-bottom: 5px;
-
-  &:first-of-type {
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-  }
-  &:last-of-type {
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-
-  .mat-expansion-panel-header {
-    height: 75px;
-    padding: 0;
-  }
 }
 
 // CDK.

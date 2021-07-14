@@ -62,15 +62,16 @@
 
     // SECTION: SETTINGS
     ::ng-deep .setting-display {
+      background-color: aqua;
       font-size: 9px;
       font-weight: 100;
-      height: 35px;
-      padding: 40px 0 0 0;
+      height: 50px;
       position: relative;
       text-align: center;
       text-transform: uppercase;
       width: 125px;
 
+      // DISPLAY VALUES
       .setting-value {
         align-content: center;
         font-size: 14px;
@@ -83,19 +84,33 @@
         width: 100%;
       }
 
-      // CHECKBOX OUTLINE.
+      // DISPLAY CHECKBOX OUTLINE.
       .checkbox-outline {
         position: absolute;
         top: 15px;
         width: 100%;
         z-index: 1;
       }
-      // CHECKBOX CHECKBOX.
+      // DISPLAY CHECKBOX CHECKBOX.
       .display-checkbox {
         position: absolute;
         top: 15px;
         width: 100%;
         z-index: 5;
+      }
+
+      // EDIT.
+      .attr-sec-edit {
+        background-color: aquamarine;
+        border-left: 1px solid;
+        width: 50px;
+      }
+
+      // DELETE.
+      .attr-sec-delete {
+        background-color: aquamarine;
+        border-left: 1px solid;
+        width: 50px;
       }
     }
   } // [end] 'attribute-item'

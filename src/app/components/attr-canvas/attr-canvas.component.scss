@@ -1,9 +1,10 @@
 /*
-LOAD.CORE
-Load the default theme wrapper.
+LOAD.CORE 
+Author: 'me@elwoodberry.com'
+Load the default theme wrapper. This code is brought to you by Elwood Berry https://elwoodberry.com
 */
 
-@import '../../assets/scss/core.scss';
+@import '../../../assets/scss/core';
 
 .attr-canvas-container {
   background-color: rgb(236, 236, 236);
@@ -20,16 +21,7 @@ Load the default theme wrapper.
   }
 }
 
-// ATTRIBUTE PANEL.
-.attribute-panel {
-  background-color: #fff;
-  cursor: grab;
-  height: 75px;
-  margin-bottom: 5px;
-  min-height: 75px;
-  padding-left: 40px;
-  position: relative;
-}
+
 
 // EXPANSION PANEL
 .attr-expansion-panel {

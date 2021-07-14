@@ -34,6 +34,25 @@
         top: 35%;
       }
     }
+
+    // SECTION: NAME & PLACEHOLDER
+    ::ng-deep .attr-sec-title {
+      padding-left: 40px;
+      padding-top: 20px;
+      width: 225px;
+
+      // ATTRIBUTE NAME
+      .attr-name {
+        color: $color-2C;
+        font-size: 18px;
+      }
+
+      // ATTRIBUTE PLACEHOLDER.
+      .attr-placeholder {
+        color: $color-A3;
+        font-size: 12px;
+      }
+    }
   }
 
   // [expansion panel] -------------------  .

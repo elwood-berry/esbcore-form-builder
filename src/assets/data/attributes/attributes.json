@@ -163,7 +163,7 @@
 		"optionType": "multiple",
 		"optionName": "Corners",
 		"placeholder": "Please select corner type.",
-		"required": false,
+		"required": true,
 		"visibleCustomer": true,
 		"visibleVendor": false,
 		"chargeType": "Flat",

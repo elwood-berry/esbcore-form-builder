@@ -6,11 +6,11 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 
 <div class="attr-canvas-container" cdkDropList (cdkDropListDropped)="drop($event)">
 
-  <div *ngFor="let option of attributeOptions" class="attribute-option">
+  <div *ngFor="let option of attributeOptions" class="attribute-option" cdkDrag>
     <app-attr-item [optionId]="option.attrId" [optionType]="option.optionType" [optionName]="option.optionName"
       [placeholder]="option.placeholder" [required]="option.required" [visibleCustomer]="option.visibleCustomer"
       [visibleVendor]="option.visibleVendor" [chargeType]="option.chargeType" [chargeCost]="option.chargeCost"
-      [chargePrice]="option.chargePrice" [chargeLabor]="option.chargeLabor" [chargeTime]="option.chargeTime" cdkDrag>
+      [chargePrice]="option.chargePrice" [chargeLabor]="option.chargeLabor" [chargeTime]="option.chargeTime">
     </app-attr-item>
   </div>
 
